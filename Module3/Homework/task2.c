@@ -1,4 +1,4 @@
-
+// Задание: написать программу, которая запускает демона.
 // Компиляция и компановка gcc task1.c
 // Запуск ./a.out
 #include <sys/types.h>
@@ -17,7 +17,7 @@ chpid = fork();
 if (chpid == 0)
 {
 	printf("I am a child\n");
-	(void)execle("/etc/init.d/saned", "/etc/init.d/saned", 0, envp);
+	(void)execle("/home/user/ELTEX/Module3/Homework/demon.sh", "/home/user/ELTEX/Module3/Homework/demon.sh", 0, envp);
 }
 else
 {
