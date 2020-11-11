@@ -89,7 +89,7 @@ if(new)
 	array[1] = 1;
 	array[2] = 1;
 
-	mybuf.sem_op = 1;
+	mybuf.sem_op = -1;
 	mybuf.sem_flg = 0;
 	mybuf.sem_num = 0;
 
@@ -103,7 +103,7 @@ else
 {
 	array[1] += 1;
 
-	mybuf.sem_op = -1;
+	mybuf.sem_op = 1;
 	mybuf.sem_flg = 0;
 	mybuf.sem_num = 0;
 

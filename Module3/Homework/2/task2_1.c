@@ -84,9 +84,9 @@ exit(-1);
 
 if(new)
 {
-	array[0] = 110;
+	array[0] = 1;
 	array[1] = 0;
-	array[2] = 120;
+	array[2] = 1;
 
 	mybuf.sem_op = 1;
 	mybuf.sem_flg = 0;
@@ -102,7 +102,7 @@ else
 {
 	array[0] += 1;
 
-	mybuf.sem_op = 1;
+	mybuf.sem_op = -1;
 	mybuf.sem_flg = 0;
 	mybuf.sem_num = 0;
 
